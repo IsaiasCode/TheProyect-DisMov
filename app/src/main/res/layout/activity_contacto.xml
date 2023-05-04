@@ -9,23 +9,24 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="305dp"
-        android:layout_height="135dp"
-        android:text="Contacta con nosotros, somos la empresa numero 01 e la ferreteria y la manufacturacion de piezas de  para su comodidad y gusto"
+        android:layout_width="317dp"
+        android:layout_height="171dp"
+        android:text="Si tienes alguna pregunta o necesitas asesoramiento sobre cómo llevar a cabo un proyecto específico, no dudes en acercarte a nosotros. Contáctanos hoy mismo para conocer más sobre nuestros productos y servicios"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.361"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintVertical_bias="0.159" />
 
     <TextView
         android:id="@+id/contactoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contacto"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,5 +34,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="339dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Correo: ferreteria@gmail.com"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero: 815 451 1232"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.297" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
