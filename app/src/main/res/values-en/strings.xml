@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="en">
+    <string name="app_name">Chat_Llamada</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="ingrese_su_correo">Enter your email</string>
+    <string name="ingresar_su_rol">Enter your rol</string>
+    <string name="espa_ol">Español</string>
+
+</resources>
+
+

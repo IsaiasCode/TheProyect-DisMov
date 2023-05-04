@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "228250424113",
+    "firebase_url": "https://chatvideollamada-7679f-default-rtdb.firebaseio.com",
+    "project_id": "chatvideollamada-7679f",
+    "storage_bucket": "chatvideollamada-7679f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228250424113:android:df8a58728632120b795610",
+        "android_client_info": {
+          "package_name": "com.example.chat_llamada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228250424113-q3qg20rqkrndsol6oc96be058s9g0ekj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdJGDOGEY7mr4yacTXTsIFwOt4mq0Pub8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228250424113-q3qg20rqkrndsol6oc96be058s9g0ekj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228250424113:android:d11fec10a7185f0b795610",
+        "android_client_info": {
+          "package_name": "com.example.chat_videollamada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228250424113-q3qg20rqkrndsol6oc96be058s9g0ekj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdJGDOGEY7mr4yacTXTsIFwOt4mq0Pub8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228250424113-q3qg20rqkrndsol6oc96be058s9g0ekj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

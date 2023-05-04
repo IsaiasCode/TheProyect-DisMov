@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:usesCleartextTraffic="true" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chat_Llamada"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+        <activity
+            android:name="org.jitsi.meet.sdk.JitsiMeetActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:replace="android:configChanges, android:windowSoftInputMode" />
+
+        <activity
+            android:name=".menuPrincipalUser"
+            android:exported="false"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/Theme.Chat_Llamada.NoActionBar" />
+        <activity
+            android:name=".menuPrincipalAdmin"
+            android:exported="false"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/Theme.Chat_Llamada.NoActionBar" />
+        <activity
+            android:name=".Productos"
+            android:exported="true"
+            />
+        <activity
+            android:name=".Contacto"
+            android:exported="true"
+            />
+        <activity
+            android:name=".Cursos"
+            android:exported="true"
+            />
+        <activity
+        android:name=".Facturas"
+        android:exported="true"
+        />
+        <activity
+            android:name=".Videollamada"
+            android:exported="true"
+           />
+
+        <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Auntenthification"
+            android:exported="true"
+            android:usesCleartextTraffic="true" >
+
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:usesCleartextTraffic="true" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/common_full_open_on_phone"
+            android:title="Chat" />
+
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/tool_icon_vector"
+            android:title="Contacto" />
+
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@drawable/common_google_signin_btn_icon_dark_focused"
+            android:title="Productos" />
+
+    </group>
+
+</menu>

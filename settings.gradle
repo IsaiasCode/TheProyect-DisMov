@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        jcenter()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+rootProject.name = "Chat_Llamada"
+include ':app'
