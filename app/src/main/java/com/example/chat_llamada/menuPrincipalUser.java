@@ -2,10 +2,17 @@ package com.example.chat_llamada;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.jitsi.meet.sdk.JitsiMeetActivity;
+import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class menuPrincipalUser extends AppCompatActivity {
 
@@ -57,8 +64,23 @@ public class menuPrincipalUser extends AppCompatActivity {
         buttonVideollamada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Videollamada.class);
-                startActivity(intent);
+                try {
+                    JitsiMeetConferenceOptions.Builder builder = new JitsiMeetConferenceOptions.Builder()
+                            .setServerURL(new URL("https://meet.jit.si"))
+                            .setAudioMuted(true)
+                            .setVideoMuted(true)
+                            .setRoom("MiSalaDeJitsi");
+
+                    JitsiMeetConferenceOptions options = builder.build();
+
+                    Intent intent = new Intent(menuPrincipalUser.this, JitsiMeetActivity.class);
+                    intent.setAction("org.jitsi.meet.CONFERENCE");
+                    intent.putExtra("JitsiMeetConferenceOptions", options);
+                    startActivity(intent);
+
+                } catch (MalformedURLException e) {
+                    Log.e("Error:",e.getMessage());
+                }
             }
         });
     }
