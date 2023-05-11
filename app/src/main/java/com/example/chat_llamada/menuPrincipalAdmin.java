@@ -16,7 +16,7 @@ public class menuPrincipalAdmin extends AppCompatActivity {
 
         // Declarar botones
         Button buttonProductos = findViewById(R.id.buttonProductosAdmin);
-        Button buttonContacto = findViewById(R.id.buttonContactoAdmin);
+        Button buttonContacto = findViewById(R.id.buttonInventario);
         Button buttonCursos = findViewById(R.id.buttonCursosAdmin);
         Button buttonChat = findViewById(R.id.buttonChatAdmin);
         Button buttonVideollamada = findViewById(R.id.buttonVideollamadaAdmin);
@@ -33,7 +33,7 @@ public class menuPrincipalAdmin extends AppCompatActivity {
         buttonContacto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Contacto.class);
+                Intent intent = new Intent(getApplicationContext(), InventarioActivity.class);
                 startActivity(intent);
             }
         });

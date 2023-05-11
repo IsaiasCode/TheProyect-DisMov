@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventarioActivity">
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Agregar Producto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/productosTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="40sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <GridLayout
+        android:layout_width="339dp"
+        android:layout_height="378dp"
+        android:columnCount="4"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Celda 1" />
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Celda 2" />
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Celda 3" />
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="Celda 4" />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="Celda 5" />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="Celda 6" />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="Celda 7" />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="Celda 8" />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Celda 9" />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="Celda 10" />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="Celda 11" />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="Celda 12" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
